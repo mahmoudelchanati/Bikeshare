@@ -5,8 +5,8 @@ import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-months = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
-days = ['saturday', 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'all']
+months_list = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
+days_list = ['saturday', 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'all']
 
 def get_filters():
     """
@@ -31,7 +31,7 @@ def get_filters():
     # get user input for month (all, january, february, ... , june)
     month = input('Please enter the desired month from January up to June, or All to analyze all months: ').lower()
     while True:
-        if month in months:
+        if month in months_list:
             break
         elif month == 'exit':
             exit()
@@ -42,7 +42,7 @@ def get_filters():
 
     day = input('Please enter the desired day i.e. Saturday, or All to analyze all days: ').lower()
     while True:
-        if day in days:
+        if day in days_list:
             break
         elif day == 'exit':
             exit()
