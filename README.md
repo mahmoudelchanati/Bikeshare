@@ -2,10 +2,10 @@
 29-05-2020
 
 ### Project Title
-Replace the Project Title
+Bikeshare Data Analysis
 
 ### Description
-Describe what your project is about and what it does
+Exploring data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. The analysis was done by computing descriptive statistics for Popular times of travel, Popular stations and trips, Trip durations, and Users info.
 
 ### Files used
 Include the files used
