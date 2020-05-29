@@ -179,8 +179,8 @@ def user_stats(df, city):
         print('Earliest Year of Bearth is:',int(min_yob))
         max_yob = df['Birth Year'].max()
         print('Most Recent Year of Bearth is:',int(max_yob))
-        mc_yob = df['Birth Year'].mode()[0]
-        print('Most Common Year of Bearth is:',int(mc_yob))
+        most_common_yob = df['Birth Year'].mode()[0]
+        print('Most Common Year of Bearth is:',int(most_common_yob))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
